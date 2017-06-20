@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.0.2"
+    "chai": "^4.0.2",
+    "faker": "^4.1.0"
   }
 }
