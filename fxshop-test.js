@@ -14,7 +14,6 @@ test.before(function(){
 });
 
 
-
 //Open chrome browser 
 
 test.describe('Login and checkout scenario', function() {
@@ -23,14 +22,12 @@ test.describe('Login and checkout scenario', function() {
         driver.get('https://fmweb-beta.staging.kops.flexint.net/'); 
     });
 
-
-//Locate elements and get on login page 
+//Get on login page 
     test.it('Login to the account', function(){
         driver.findElement(by.className("headerLoginBtn fpayActionLogin")).click();
         driver.sleep(5000)
     });
   
-
 //Fill in login credentials 
     test.it('Filling out credentials', function(){
         driver.findElement(by.id("loginForm_fx-input_email_0")).sendKeys('barbossa.approve1@flexshopper.com');
@@ -86,6 +83,7 @@ test.describe('Login and checkout scenario', function() {
     //     driver.quit();
         
     // });
+
 
 });
 
