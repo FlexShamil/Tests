@@ -1,0 +1,7 @@
+export SAVE_LINKS=
+export SAVE_LINKS_PATH=
+export TEST_USER_EMAIL=
+export TEST_USER_PASSWORD=
+export SEARCH_TERM=
+export TEST_ENV=
+export ROOT_DOMAIN=   
