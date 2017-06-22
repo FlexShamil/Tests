@@ -44,26 +44,32 @@ To get started, please follow the instructions below:
     exec zsh
     ```
 
-4. Clone this repositry and change into the directory
+4. Install ChromeDriver.
+
+    ```
+    npm install -global chromedriver
+    ```
+
+5. Clone this repositry and change into the directory
 
     ```
     git clone https://github.com/FlexShopper/automated-test.git
     cd automated-test/
     ```
 
-5. Install dependencies
+6. Install dependencies
 
     ```
     npm install
     ```
 
-6. Rename the .envrc.sample file as .envrc
+7. Rename the .envrc.sample file as .envrc
 
     ```
     cp .envrc.sample .envrc
     ```
 
-7. Fill out the environment variables
+8. Fill out the environment variables
 
     * **SAVE\_LINK**: Sets whether to save links to generated lease PDFs to a text file. Set as 'true' or 'false'.
     * **SAVE\_LINK\_PATH**: Path to the text file for storing URLs for generated lease PDFs. Omit the '.txt'.
