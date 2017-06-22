@@ -1,4 +1,4 @@
-# automated-test
+# Automated-tests
 
 
 This repositry for automated tests for end-to-end testing of Flexshopper website (both Production and Beta). 
