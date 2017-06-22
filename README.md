@@ -1,7 +1,7 @@
 # automated-test
 
 
-This repositry for automated tests for end-to-end testing of Flexshopper webdite (both Production and Beta). 
+This repositry for automated tests for end-to-end testing of Flexshopper website (both Production and Beta). 
 
 
 ## Dependencies
