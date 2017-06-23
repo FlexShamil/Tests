@@ -1,12 +1,12 @@
 var webdriver = require ('selenium-webdriver'), 
     by = webdriver.By, 
-    until = webdriver.until;
+    until = webdriver.until; // TODO: remove unused var
 
 var test = require('selenium-webdriver/testing');
 var linkSaver = require('./linksaver');
 
 var driver;
-const mochaTimeOut = 30000; //ms
+const mochaTimeOut = 30000; //ms // TODO: consider making the time out time a env var
 
 test.before(function () {
     this.timeout(mochaTimeOut);
@@ -15,6 +15,9 @@ test.before(function () {
     driver.sleep(3000);
 });
 
+// TODO: add space between slashes and comment text
+// TODO: replace double quotes with single quotes
+// TODO: fix indentation on comments
 //Open chrome browser 
 test.describe('Login and checkout scenario', function() {
     this.timeout(mochaTimeOut); 
@@ -22,13 +25,13 @@ test.describe('Login and checkout scenario', function() {
         driver.get(process.env.ROOT_DOMAIN);  
     });
 
-//Get on login page 
+//Get on login page
     test.it('Login to the account', function(){
         driver.findElement(by.className("headerLoginBtn fpayActionLogin")).click();
-        driver.sleep(5000)
+        driver.sleep(5000) // TODO: add semicolon
     });
   
-//Fill in login credentials 
+//Fill in login credentials
     test.it('Filling out credentials', function(){
         driver.findElement(by.id("loginForm_fx-input_email_0")).sendKeys(process.env.TEST_USER_EMAIL);
         driver.findElement(by.id("loginForm_fx-input_password_1")).sendKeys(process.env.TEST_USER_PASSWORD);

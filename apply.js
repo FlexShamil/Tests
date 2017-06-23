@@ -1,6 +1,6 @@
 var webdriver = require ('selenium-webdriver'), 
     by = webdriver.By, 
-    until = webdriver.until;
+    until = webdriver.until; // TODO: remove used var
 
 var driver = new webdriver.Builder().forBrowser('chrome').build();
 
@@ -21,8 +21,12 @@ function getLouisianaDdOpt () {
 
 };
 
+// TODO: place in a test suite
+// TODO: put apply data in an object (you can copy and paste this from the other test and require faker)
+// TODO: put space between slashes and comment text
+
 //Open chrome(www.flexshopper.com) 
-driver.get('https://fmweb-beta.staging.kops.flexint.net'); 
+driver.get('https://fmweb-beta.staging.kops.flexint.net'); // TODO: replace with env var
 driver.sleep(5000); 
 
 //Click on apply button 
@@ -30,10 +34,12 @@ driver.findElement(by.className('headerApplyBtn fpayActionApply')).click();
 driver.sleep(5000);
 
 //Fill required fields - bios
+// TODO: use single quotes only
+// TODO: implement fake data object
 driver.findElement(by.id('signupForm_fx-input_name.first_0')).sendKeys("KURT"); 
 driver.findElement(by.id('signupForm_fx-input_name.last_1')).sendKeys("AALOE"); 
 driver.findElement(by.id('signupForm_fx-input_email_0')).sendKeys('a12345.approve@flexshopper.com');
-driver.sleep(3000) 
+driver.sleep(3000) // TODO: missing semicolon
 driver.findElement(by.id('signupForm_fx-input_emailRepeat_0')).sendKeys('a12345.approve@flexshopper.com');
 driver.findElement(by.id('signupForm_input-password_password_0')).sendKeys('test123'); 
 driver.findElement(by.id('signupForm_input-password_passwordRepeat_0')).sendKeys('test123');
@@ -47,7 +53,7 @@ driver.findElement(by.id('applyForm_select_address.region_1')).click();
 driver.sleep(4000);
 driver.findElement(by.js(getLouisianaDdOpt)).click();  
 
-driver.sleep(10000); 
+driver.sleep(10000);
 //pick a state
 
 driver.findElement(by.id('applyForm_fx-number_address.postalCode_2')).sendKeys('70126');
@@ -56,7 +62,7 @@ driver.findElement(by.id('applyForm_fx-number_phones.work_1')).sendKeys('7548019
 driver.findElement(by.id('applyForm_fx-number_employment.monthlyIncome_0')).sendKeys('5000'); 
 driver.findElement(by.id('applyForm_select_employment.payFrequency_1')).click(); 
 
-
+// TODO: remove these blank lines
 
 
 

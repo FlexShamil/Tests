@@ -86,3 +86,9 @@ To run a test, use the following command:
 ```
 mocha <test file name>
 ```
+
+To run all tests, use the following:
+
+```
+npm test
+```
