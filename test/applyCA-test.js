@@ -36,15 +36,15 @@ test.describe('Signup with Credit Card', function() {
     //Fill in "New Customer Details" and continue 
     test.it('Fill in account data', function(){
         //TODO: replace double quotes with single quotes
-        driver.findElement(by.id("signupForm_fx-input_name.first_0")).sendKeys(testData.firstName);
-        driver.findElement(by.id("signupForm_fx-input_name.last_1")).sendKeys(testData.lastName); 
-        driver.findElement(by.id("signupForm_fx-input_email_0")).sendKeys(testData.email);
+        driver.findElement(by.id('signupForm_fx-input_name.first_0')).sendKeys(testData.firstName);
+        driver.findElement(by.id('signupForm_fx-input_name.last_1')).sendKeys(testData.lastName); 
+        driver.findElement(by.id('signupForm_fx-input_email_0')).sendKeys(testData.email);
         driver.sleep(4000);
-        driver.findElement(by.id("signupForm_fx-input_emailRepeat_0")).sendKeys(testData.email);
-        driver.findElement(by.id("signupForm_input-password_password_0")).sendKeys(testData.password);
-        driver.findElement(by.id("signupForm_input-password_passwordRepeat_0")).sendKeys(testData.password);
-        driver.findElement(by.id("continue_btn_signup")).click();
+        driver.findElement(by.id('signupForm_fx-input_emailRepeat_0')).sendKeys(testData.email);
+        driver.findElement(by.id('signupForm_input-password_password_0')).sendKeys(testData.password);
+        driver.findElement(by.id('signupForm_input-password_passwordRepeat_0')).sendKeys(testData.password);
         }); //TODO: indentation
+        driver.findElement(by.id('continue_btn_signup')).click();
 
 
 //Fill in "Application form" with CC info
